@@ -21,10 +21,18 @@
     <!-- Шапка -->
     <header class="header">
       <div class="header-flex container">
+        <a class="logo link logo-header" href="./index.html"
+          >Web<span class="logo-clr-dark">Studio</span></a
+        >
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="menu-hamburger-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu-hamburger"></use>
+        </svg>
+      </button>
         <nav class="header-nav-flex">
-          <a class="logo link logo-header" href="./index.html"
-            >Web<span class="logo-clr-dark">Studio</span></a
-          >
           <ul class="list link header-item">
             <li class="header-item">
               <a class="link-style link current" href="./index.html">Studio</a>
@@ -65,7 +73,7 @@
         </div>
       </section>
       <!-- Достоинства -->
-      <section class="dignity">
+      <!-- <section class="dignity">
         <div class="container">
           <h2 hidden>Dignity</h2>
           <ul class="list dignity-item">
@@ -119,9 +127,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наши работы -->
-      <section class="bgr-clr-first works">
+      <!-- <section class="bgr-clr-first works">
         <div class="container">
           <h2 class="second-hdr">What are we doing</h2>
           <ul class="list list-works">
@@ -136,7 +144,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша команда -->
       <section class="team-bgr">
         <div class="container team-container">
@@ -293,7 +301,8 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
+      <!-- Customers -->
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="second-hdr">Customers</h2>
           <ul class="list customers-list">
@@ -341,10 +350,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Footer -->
-    <footer class="footer-bgr">
+    <!-- <footer class="footer-bgr">
       <div class="footer-container-style container">
         <div class="footer-style">
           <a class="logo link logo-ftr" href="./index.html"
@@ -408,7 +417,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- /** |============================ 
     | Modal window
@@ -497,6 +506,76 @@
         </form>
       </div>
     </div>
+    <!-- /**
+      |============================
+      | Mobile-menu
+      |============================
+    */ -->
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-btn-close js-close-menu mobile-menu-btn-close" type="button">
+        <svg class="modal-btn-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#modal"></use>
+        </svg>
+      </button>
+  <ul class="mobile-menu">
+    <li>
+      <a href="./index.html" class="link">Studio</a>
+    </li>
+    <li>
+      <a href="./portfolio.html" class="link">Portfolio</a>
+    </li>
+    <li>
+      <a href="" class="link">Contacts</a>
+    </li>
+  </ul>
+  <ul class="list mobile-contacts">
+    <li>
+      <a class="link link-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+    </li>
+    <li>
+      <a class="link link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+  </ul>
+
+       <ul class="list social-list-icon social-list-icon-modile-menu">
+                  <li class="social-icon-list">
+                    <a class="link social-icon" href="">
+                      <svg class="social-icon-svg" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon-list">
+                    <a class="link social-icon" href="">
+                      <svg class="social-icon-svg" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon-list">
+                    <a class="link social-icon" href="">
+                      <svg class="social-icon-svg" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon-list">
+                    <a class="link social-icon" href="">
+                      <svg class="social-icon-svg" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+            
+    </div>
+ <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
