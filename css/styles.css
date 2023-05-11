@@ -1041,7 +1041,12 @@ img {
     transform: translate(-50%, 0) scale(1);
   }
 }
-
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .modal {
+    top: 0;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
 .modal-btn-close {
   position: absolute;
   top: 24px;
