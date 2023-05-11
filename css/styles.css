@@ -1035,18 +1035,13 @@ img {
   border-radius: 4px;
   transition: transform var(--timing-animatiom);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) and (orientation: landscape) {
   .modal {
     top: 0;
     transform: translate(-50%, 0) scale(1);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .modal {
-    top: 0;
-    transform: translate(-50%, 0) scale(1);
-  }
-}
+
 .modal-btn-close {
   position: absolute;
   top: 24px;
